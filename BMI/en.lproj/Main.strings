@@ -1,18 +1,18 @@
 
 /* Class = "UILabel"; text = "Your BMI:"; ObjectID = "Qtc-xB-AzM"; */
-"Qtc-xB-AzM.text" = "Your BMI:";
+"Qtc-xB-AzM.text" = "Din BMI";
 
 /* Class = "UILabel"; text = "Enter your height (m):"; ObjectID = "SP9-34-Yqk"; */
-"SP9-34-Yqk.text" = "Enter your height (m):";
+"SP9-34-Yqk.text" = "Høyde";
 
 /* Class = "UIButton"; normalTitle = "Calculate my BMI!"; ObjectID = "U7B-Qw-r5w"; */
-"U7B-Qw-r5w.normalTitle" = "Calculate my BMI!";
+"U7B-Qw-r5w.normalTitle" = "Beregn BMI";
 
 /* Class = "UILabel"; text = "Category appears here:"; ObjectID = "Zw9-UB-5ql"; */
-"Zw9-UB-5ql.text" = "Category appears here:";
+"Zw9-UB-5ql.text" = "Kategori";
 
 /* Class = "UILabel"; text = "BMI Calculator"; ObjectID = "hKA-dT-6j4"; */
-"hKA-dT-6j4.text" = "BMI Calculator";
+"hKA-dT-6j4.text" = "Beregne BMI";
 
 /* Class = "UILabel"; text = "Enter your weight (kg):"; ObjectID = "n44-8a-ahG"; */
-"n44-8a-ahG.text" = "Enter your weight (kg):";
+"n44-8a-ahG.text" = "Vekt";
