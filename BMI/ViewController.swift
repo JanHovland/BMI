@@ -20,9 +20,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var heightInput: UITextField!
     @IBOutlet weak var bmiOutput: UITextField!
     @IBOutlet weak var categoryOutput: UILabel!
+
+    // Dersom en trenger en egen knapp for å slå av tastaturet
+    
+    @IBAction func Ferdig(_ sender: Any) {
+        self.view.endEditing(true)
+    }
     
     @IBAction func calcBMI(_ sender: Any) {
         
+        // Her lukkes tastaturet når en trykker på calcBMI
+        
+        self.view.endEditing(true)
+
         if var heightStr = heightInput.text {
             
             // Bytter ut eventuelle "," med "."
@@ -81,14 +91,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+        
+        weightInput.text = ""
+        heightInput.text = ""
+       
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.weightInput.resignFirstResponder()
-        self.heightInput.resignFirstResponder()
-      return true
-    }
-    
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        self.weightInput.resignFirstResponder()
+//        self.heightInput.resignFirstResponder()
+//      return true
+//    }
+//
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -96,10 +110,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     // Skjule tastaturet når en trykker utenfor de 2 input feltene
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        self.view.endEditing(true)
+//    }
+//
 
 }
 
