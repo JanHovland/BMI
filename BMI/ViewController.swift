@@ -13,7 +13,26 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Lager en toolbar på toppen av tastaturet som  inneholder knappen ferdig
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace,
+                                            target: nil, action: nil)
+        
+        let ferdigButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done,
+                                           target: self, action: #selector(self.skjulTastatur))
+        
+        toolBar.setItems([flexibleSpace, ferdigButton], animated: false)
+
+        weightInput.inputAccessoryView = toolBar
+        heightInput.inputAccessoryView = toolBar
+        
+    }
+    
+    @objc func skjulTastatur() {
+        view.endEditing(true)
     }
     
     @IBOutlet weak var weightInput: UITextField!
@@ -21,18 +40,23 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var bmiOutput: UITextField!
     @IBOutlet weak var categoryOutput: UILabel!
 
-    // Dersom en trenger en egen knapp for å slå av tastaturet
-    
-    @IBAction func Ferdig(_ sender: Any) {
-        self.view.endEditing(true)
-    }
-    
     @IBAction func calcBMI(_ sender: Any) {
         
-        // Her lukkes tastaturet når en trykker på calcBMI
+        let høyde = heightInput.text
+        let vekt = weightInput.text
         
-        self.view.endEditing(true)
-
+        if (høyde == "" || vekt == "") {
+            print("Du må legge inn begge verdiene")
+            
+            let alertController = UIAlertController(title: "Beregn BMI", message: "Du må legge inn både vekt og høyde", preferredStyle: UIAlertControllerStyle.alert)
+            
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            
+            present(alertController, animated: true, completion: nil)
+            
+            return()
+        }
+        
         if var heightStr = heightInput.text {
             
             // Bytter ut eventuelle "," med "."
@@ -64,23 +88,21 @@ class ViewController: UIViewController, UITextFieldDelegate {
                                 
                                 switch BMI {
                                 case 1..<15:
-                                    categoryOutput.text = "Very severely underweight"
+                                    categoryOutput.text = "Ekstremt undervektig"
                                 case 15...16:
-                                    categoryOutput.text = "Severely underweight"
+                                    categoryOutput.text = "Svært undervektig"
                                 case 16..<18.5:
-                                    categoryOutput.text = "Underweight"
+                                    categoryOutput.text = "Undervektig"
                                 case 18.5..<25:
                                     categoryOutput.text = "Normal"
                                 case 25..<30:
-                                    categoryOutput.text = "Overweight"
+                                    categoryOutput.text = "Overvektig"
                                 case 30..<35:
-                                    categoryOutput.text = "Moderately obese"
+                                    categoryOutput.text = "Moderat overvektig"
                                 case 35..<40:
-                                    categoryOutput.text = "Severely obese"
-                                case 40..<60:
-                                    categoryOutput.text = "Very severely obese"
-                                case 60...:
-                                    categoryOutput.text = "Extremely severe obese"
+                                    categoryOutput.text = "Svært overvektig"
+                                case 40...:
+                                    categoryOutput.text = "Ekstremt overvektig"
                                 default:
                                    return
                                 }
@@ -97,23 +119,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
        
     }
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-//        self.weightInput.resignFirstResponder()
-//        self.heightInput.resignFirstResponder()
-//      return true
-//    }
-//
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-    // Skjule tastaturet når en trykker utenfor de 2 input feltene
-    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
-//    }
-//
 
 }
 

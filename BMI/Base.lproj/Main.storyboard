@@ -76,7 +76,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kategori" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw9-UB-5ql">
-                                <rect key="frame" x="155.5" y="393" width="64.5" height="30"/>
+                                <rect key="frame" x="155.5" y="348" width="64.5" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Elk-dD-Vsl"/>
                                 </constraints>
@@ -119,7 +119,7 @@
                             <constraint firstItem="U7B-Qw-r5w" firstAttribute="top" secondItem="JjL-GP-rFy" secondAttribute="bottom" constant="10" id="mjI-ao-VHR"/>
                             <constraint firstItem="hKA-dT-6j4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="o63-m6-5j5"/>
                             <constraint firstItem="U7B-Qw-r5w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q60-Sh-DVA"/>
-                            <constraint firstItem="Zw9-UB-5ql" firstAttribute="top" secondItem="Pk9-qE-6DP" secondAttribute="bottom" constant="93" id="qAW-GM-1eY"/>
+                            <constraint firstItem="Zw9-UB-5ql" firstAttribute="top" secondItem="Pk9-qE-6DP" secondAttribute="bottom" constant="48" id="qAW-GM-1eY"/>
                             <constraint firstItem="Sh5-6C-bHf" firstAttribute="top" secondItem="hKA-dT-6j4" secondAttribute="bottom" constant="60" id="v3G-tR-tPN"/>
                             <constraint firstItem="Sh5-6C-bHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xWL-iQ-o8D"/>
                         </constraints>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="6"/>
+            <point key="canvasLocation" x="-462" y="29"/>
         </scene>
     </scenes>
 </document>

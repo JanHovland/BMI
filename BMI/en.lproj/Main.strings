@@ -1,18 +1,27 @@
 
+/* Class = "UITextField"; placeholder = "Beregnet BMI"; ObjectID = "Hs2-uq-6Zf"; */
+"Hs2-uq-6Zf.placeholder" = "Beregnet BMI";
+
+/* Class = "UITextField"; placeholder = "Kilo"; ObjectID = "MGL-Ud-bGT"; */
+"MGL-Ud-bGT.placeholder" = "Kilo";
+
 /* Class = "UILabel"; text = "Your BMI:"; ObjectID = "Qtc-xB-AzM"; */
-"Qtc-xB-AzM.text" = "Din BMI";
+"Qtc-xB-AzM.text" = "Your BMI:";
 
-/* Class = "UILabel"; text = "Enter your height (m):"; ObjectID = "SP9-34-Yqk"; */
-"SP9-34-Yqk.text" = "Høyde";
+/* Class = "UILabel"; text = "Høyde:"; ObjectID = "SP9-34-Yqk"; */
+"SP9-34-Yqk.text" = "Høyde:";
 
-/* Class = "UIButton"; normalTitle = "Calculate my BMI!"; ObjectID = "U7B-Qw-r5w"; */
+/* Class = "UIButton"; normalTitle = "Beregn BMI"; ObjectID = "U7B-Qw-r5w"; */
 "U7B-Qw-r5w.normalTitle" = "Beregn BMI";
 
-/* Class = "UILabel"; text = "Category appears here:"; ObjectID = "Zw9-UB-5ql"; */
+/* Class = "UILabel"; text = "Kategori"; ObjectID = "Zw9-UB-5ql"; */
 "Zw9-UB-5ql.text" = "Kategori";
 
-/* Class = "UILabel"; text = "BMI Calculator"; ObjectID = "hKA-dT-6j4"; */
-"hKA-dT-6j4.text" = "Beregne BMI";
+/* Class = "UILabel"; text = "Regne ut BMI"; ObjectID = "hKA-dT-6j4"; */
+"hKA-dT-6j4.text" = "Regne ut BMI";
 
-/* Class = "UILabel"; text = "Enter your weight (kg):"; ObjectID = "n44-8a-ahG"; */
-"n44-8a-ahG.text" = "Vekt";
+/* Class = "UITextField"; placeholder = "Meter"; ObjectID = "jmc-Pm-L0B"; */
+"jmc-Pm-L0B.placeholder" = "Meter";
+
+/* Class = "UILabel"; text = "Vekt :"; ObjectID = "n44-8a-ahG"; */
+"n44-8a-ahG.text" = "Vekt :";
