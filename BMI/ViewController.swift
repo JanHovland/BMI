@@ -24,6 +24,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         let ferdigButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done,
                                            target: self, action: #selector(self.skjulTastatur))
         
+//        let playButton = UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(ViewController.skjulTastatur))
+//        
         toolBar.setItems([flexibleSpace, ferdigButton], animated: false)
 
         weightInput.inputAccessoryView = toolBar
