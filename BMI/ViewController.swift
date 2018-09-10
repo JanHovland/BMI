@@ -18,10 +18,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace,
+        let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,
                                             target: nil, action: nil)
         
-        let ferdigButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done,
+        let ferdigButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done,
                                            target: self, action: #selector(self.skjulTastatur))
         
 //        let playButton = UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(ViewController.skjulTastatur))
@@ -50,9 +50,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if (høyde == "" || vekt == "") {
             print("Du må legge inn begge verdiene")
             
-            let alertController = UIAlertController(title: "Beregn BMI", message: "Du må legge inn både vekt og høyde", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Beregn BMI", message: "Du må legge inn både vekt og høyde", preferredStyle: UIAlertController.Style.alert)
             
-            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             
             present(alertController, animated: true, completion: nil)
             
